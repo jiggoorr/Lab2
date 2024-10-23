@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн школа програмування</title>
+    <link rel="stylesheet" href="paneli.css"> <!-- Додано посилання на paneli.css -->
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('laptop-wooden-table-hands-man-working-computer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            filter: blur(8px);
+            z-index: -1;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .left-image-container, .right-image-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        .positioned-image, .right-image {
+            width: 500px;
+            height: auto;
+            margin: 10px 0;
+            transition: transform 0.3s ease;
+        }
+
+        .positioned-image:hover, .right-image:hover {
+            transform: scale(1.2);
+        }
+
+        .caption {
+            text-align: center;
+            font-size: 18px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">CodeWave</div>
+        <ul class="nav-links">
+            <li><a href="#home">Головна</a></li>
+            <li><a href="./inform.html">Про нас</a></li>
+            <li><a href="services.html">Послуги</a></li>
+            <li><a href="./contacts.html">Контакти</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="./login.html" class="login-btn">Увійти</a>
+            <a href="./registration.html" class="register-btn">Реєстрація</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Онлайн школа програмування</h1>
+    </header>
+
+    <div class="image-container">
+        <div class="left-image-container">
+            <img src="kids-working-together-laptop.jpg" alt="Діти 7-16 років" class="positioned-image">
+            <div class="caption">Для дітей від 7 років</div>
+        </div>
+        <div class="right-image-container">
+            <img src="business-man-work.jpg" alt="Інша картинка" class="right-image">
+            <div class="caption">Програмування для підлітків та дорослих</div>
+        </div>
+    </div>
+</body>
+</html>
